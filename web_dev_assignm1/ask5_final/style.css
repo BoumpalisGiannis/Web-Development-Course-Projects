@@ -1,0 +1,960 @@
+/* <header> tags styling */
+.upper_header {
+    /* Dimioyrgia border kai stoixisi grammatwn */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-bottom: 1px solid #000;
+    
+}
+
+.lower_header {
+    /* Epilogi megethoys twn grammatwn kai stoixisi toys */
+    font-size: large;
+    text-align: center;
+}
+
+.logoh {                /* topothesia toy element me xrisi grid */
+    grid-column: 2 / 3;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.nav {                  /* topothesia toy navigation bar */
+    grid-column: 1 / 4;
+}
+
+.header_h1,
+.logo {
+    /* Stoixisi twn block orizontia, parakatw oi epiloges mas synisferoyn stin
+    wraiopoiisi twn stoixeiwn toy header wste na vriskontai stoixismena sto idio epipedo */
+    margin: 15px;
+    margin-left: 52px;
+    vertical-align: middle;
+}
+
+.logo {
+    /* Megethos tis eikonas */
+    height: 80%;
+    width: 20%;
+}
+
+.header_h1 {
+    /* Epiloges mas gia to megethos twn grammatwn toy onomatos toy site kai toy styl toys*/
+    font-size: 420%;
+    font-family: monospace;
+}
+
+/* End of <header> tags styling */
+
+/* <h?>, <p> tags styling */
+
+h1,
+h2,
+h3,
+h4 {
+    /* Epilogi xrwmatos kai font gia ta <h?> tags poy xrisimopoioyme */
+    color: rgb(0, 0, 0);
+    font-family: 'Inter', Times, sans-serif;
+}
+
+p,
+li {
+    /* Epilogi oikogeneias font kai megethoys twn <p> kai <li> tags */
+    font-family: 'Inter', serif;
+    font-size: 1.1em;
+}
+
+/* End of <h?>, <p> tags styling */
+
+/* Navigation bar*/
+
+.topnav {
+    /* Epiloges mas gia to styl, tin thesi kai tin wraiopoiisi toy navigation bar mas */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    border-top: 1px solid black;
+    width: 100%;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+.topnav a {
+    /* Epiloges mas gia to periexomeno twn block toy navigation bar kai gia tin omoiomorfi stoixisi meta3y toys kai entos toy block  */
+    padding: 10px 30px;
+    color: black;
+    width: 7%;
+    border-left: 1px solid #000;
+    text-decoration: none;
+}
+
+#a_right {
+    border-right: 1px solid #000;
+    /* dimioyrgia border sto de3i akriano stoixei o toy navbar */
+}
+
+.topnav a:hover {
+    /* Allagi katastasis kai xrwmatwn otan kanoyme hover */
+    color: white;
+    background-color: rgb(0, 0, 0);
+
+}
+
+/* End of navigation bar styling */
+
+/* Body styling */
+
+body {
+    /* Epiloges gia to geniko styl toy body, dimioyrgia toy background me gradient, orismos apolytis monadas mikoys kai stoixisi twn keimenwn sto kentro */
+    border: 2px solid #000;
+    background: linear-gradient(225deg, rgb(255, 235, 146), rgba(188, 255, 205, 0.514), #c5d3ffab, rgba(255, 164, 255, 0.678));
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    font-family: 'Inter', sans-serif;           /* Added font from google.fonst */
+    font-size: 12.3pt;
+}
+
+@keyframes gradient {       /* animated gradient */
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Link styling */
+a {
+    color: #000;            /* arxiko xrwma */
+}
+
+.aggelia-group a:visited {
+    color: rgba(187, 66, 187, 0.8);             /* visited xrwma */
+}
+
+.aggelia-group a:link {
+    /* Arxiki katastasi toy syndesmoy xwris na exei episkefthei me epiloges sta xrwmata kai sto paxos toy*/
+    color: #000;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+
+/* End of link styling */
+
+/* table and list styling */
+
+.table-div {                /* topothesia toy pinaka me ta stoixeia tis aggelias */
+    display: grid;
+    place-items: center;
+}
+
+
+.table-div h4 {
+    /* Orismos megethous enos sygkekrimenoy <h4> tag */
+    font-size: 170%;
+}
+
+/* End of table and list styling */
+
+main {
+    min-height: 55vh;
+    /* Orismos ypsoys toy main part tis selidas mas */
+
+    display: grid;
+    grid-template-columns: 1fr;
+
+}
+
+#index_main {               /* orismos apostasis */
+    margin-bottom: 7vh;
+}
+
+/* Aggelia stylings */
+
+/* Aggelia-group */
+
+.aggelia-group {
+    /* Epiloges gia ta arthra poy perilamvanoyn eite kapoia sygkekrimeni aggelia, eite ena group aggeliwn. 
+    Orizoyme apostaseis meta3y toys kai genika apo to <body> tis selidas me to margin. Orizoyme tin paraatw timi sto overflow gia na min exoyme provlimata yperxeilisis 
+    twn pliroforiwn twn aggeliwn, otan px mia apo aytes periexei pio polles leptomereis apo tin amesws epomeni kai ena meros twn leptomereiwn emfanizetai 
+    pio katw apo oso prepei kai xalaei tin omoiomorfia tis selidas */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    margin-top: 1%;
+    margin-bottom: 1%;
+
+    overflow: hidden;
+    max-height: 300px;
+}
+
+#al_c {                 /* Stoixisi grammatwn */
+    text-align: center;
+}
+
+.aggelia-group img {            /* Megethos eikonas */
+    width: 500px; 
+    height: 300px;
+}
+
+.aggelia-group ul {
+    /* Morfopoisi twn listwn orizontas apostaseis kai afairontas kai tis koykides sto aristero meros twn periexomenwn twn listwn */
+
+    padding-bottom: 15px;
+    margin: 5%;;
+    -webkit-columns: 3;
+    -moz-columns: 3;
+    columns: 3;
+    height: auto;
+}
+
+.aggelia-group h3 {
+    /* Orismos sxetikis monadas gia to megethos tis grammatoseiras toy h3 tag gia tis aggelies mas */
+    font-size: 1.5em;
+    text-align: center;
+
+}
+
+.aggelia-group li {
+    /*Orismos apostasewn kai megethos font gia ta periexomena twn listwn */
+    font-size: 1.1em;
+    text-align: left;
+    margin: 2% 0;
+}
+
+.agg_leptom {
+    /* Epiloges morfopoiisis gia tis leptomereis twn aggeliwn gia to ypsos, to platos tis kai apostaseis apo ta borders*/
+    float: right;
+    width: 40%;
+    height: 40%;
+    padding: 10px;
+    align-self: center;         
+    margin-bottom: 8%;  
+    font-size: 0.9rem; 
+    display: block;
+}
+
+.cat {                              /* Afairesi tis teleias dipla apo ta <li> antikeimena */
+    list-style: none;
+}
+
+.cat li{                    
+    color: black;           /* Xrwma */
+    padding: 10px;              /* apostasi entos toy element */
+    break-inside: avoid;            /* gia na apotrepsoyme breaks entos twn <li> stoixeiwn */
+}
+
+.cat li:hover{
+    background-color: rgba(187, 66, 187, 0.3);
+    display: block;
+}
+/* End of aggelia stylings */
+
+/* For the car details */
+
+#peugeot-part {             /* kateythinsi me flex kai stoixisi sto kentro gia ta paidia elements toy peugeot-part */
+    display: flex;
+    justify-content: center;
+    
+    overflow: hidden;
+    margin-bottom: 1%;
+  
+}
+
+#leptomereies-part {                    /* kateythinsi me flex se stili kai stoixisi sto kentro gia ta paidia elements toy leptomereies-part */ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#leptomereies-part article {            /* Stoixisi grammatwn sto kentro */
+    text-align: center;
+}
+
+#leptomereies-part h3 {                         /* topothesia, apostaseis kai epiloges xrwmatos kai styl gia tin epikefalida toy leptomereies-part element */
+    background-color: rgba(187, 66, 187, 0.2);
+    border-radius: 10px;
+    display: inline-block;
+    padding: 10px;
+}
+
+.car-detail-images {                    /* topothesia toy group twn eikonwn */ 
+    display: flex;
+    flex-direction: row;    
+}
+
+.car-detail-images img {                /* megethos eikonas */
+    width: 600px;
+    height: 400px;
+    margin: 2%;
+    border-radius: 10px;
+}
+
+#arrow {                /* Orismos megethous kai apostasewn tis eikonas */
+    width: 6%;
+    margin-top: 10px;
+    
+}
+
+
+.aggelia_details {
+    /* Epiloges gia tin morfopoiisi kai tin omoioomorfia meta3y twn diaforetikwn stoixeiwn tis aggelias toy aytokinitoy
+    orizontas borders, xrwma sto background, megethos kai stoixisi toy koytioy, apostaseis kai megethos tis grammatoseiras */
+    
+    /*background-color: rgba(187, 66, 187, 0.3);*/
+    flex: 1;
+    padding: 20px;
+    width: 60%;
+    margin-top: auto;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    justify-content: center;
+    text-align: center;
+}
+
+.aggelia_details>p {            /* orismos apostasis */
+    margin: 5%;
+}
+
+#aggelia-arxi>h3 {          /* orismos megethoys grammatoseiras */
+    font-size: 35px;
+}
+
+.car_detail_info p {
+    /* Epiloges gia tin stoixisi kai to megethos twn grammatwn twn pliroforiwn tis aggelias */
+    margin: auto;
+
+}
+
+#arxiki-eikona-agg > img {
+    /* Epiloges gia to megethos tis arxikis eikonas tis aggelias toy aytokinitoy kai tin stoixisi sto kentro  */ 
+    margin: 8%; 
+    width: 100%;
+    height: 350px;
+}
+
+#aggelia-plirof-telos {             /* kateythinsi antikeimenwn entos toy sygkekrimenoy element me flex se stili kai stoixisi sto kentro */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;              /* orismos apostasis */
+}
+
+#aggelia-plirof-telos>p {           /* orismos apostasis */
+    margin: 5px;
+}
+
+/* End of car detail styling */
+
+
+#about_us {             /* orismos toy grid layout gia to sygkekrimeno element */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#about_header {             /* topothesia toy sygkekrimenoy element mesw grid kai stoixisi grammatwn sto kentro */   
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+}
+
+#about_img {            /*topothesia tis eikonas sto about_us me xrisi grid */
+
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin-right: 57px;
+
+    display: flex;              /* Gia na paei i eikona pio kentrika stin othoni mas */
+    justify-content: center;
+
+}
+
+#pi1 {                  /* Topothesia twn pliroforiwn  */
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+}
+
+#pi2 {              
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+}
+
+.form-container {                   /* xrisi flex gia kateyhinsi twn antikeimnwn entos toy group se stili kai stoixisi sto kentro */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form {                  /* xrisi flex gia kateyhinsi twn antikeimnwn entos toy group se stili kai stoixisi sto kentro */
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    /* Adjust the spacing between form elements as needed */
+}
+
+.form-group {               /* xrisi flex gia kateyhinsi twn antikeimnwn entos toy group se stili kai stoixisi sto kentro */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#in_row_form_group {                  /* Gia na exoyme tis epiloges epikoinwnias se seira */
+    display: flex;
+    flex-direction: row;
+}
+
+#in_row_form_group label {          /* Apostaseis meta3y twn labels poy vriskontai se seira */
+    margin: 1.1%;
+}
+
+
+#in_row_form_group input {
+    width: 100%;
+}
+
+details {                   /* Apostaseis gia to element details */
+    margin-top: 1.8%;
+}
+
+
+.form-container label {
+    /* form label styling*/
+    margin-bottom: 5px;
+    /* Add space between label and input */
+    font-weight: bold;
+    margin-top: 10px;
+    display:block;
+}
+
+.question {                     /* Epiloges megethoys kai styl grammatoseiras gia tis erwtiseis toy erwtimatologioy, kai apostasi apo tis apantiseis */
+    font-size: 1.25em;
+    font-weight: bold;
+    margin-bottom: 2%;
+}
+
+.survey_group {             /* Apostasi gia kathe group erwtisewn toy erwtimatolgioy */
+    margin-bottom: 2%;
+}
+
+.survey_option label{
+    font-weight: normal;
+}
+
+
+.form-container input {
+    /* form cells styling*/
+    padding: 10px;
+    width: 250px;
+    /* Make the input fields take the full width of their container */
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+.form-container input[type="submit"] {                 /* Orismos megethoys kai apostasewn sto submit koympi */ 
+    /*form button styling*/
+    width: 100%;
+    background-color: #007bff;      /* xrwma */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;             /* curved corners */
+}
+
+
+.form-container input[type="submit"]:hover {
+    /*button hover*/
+    background-color: #0056b3;
+}
+
+fieldset {                            /* Orismos megethoys toy fieldset stoixeioy, stylistikes epiloges gia ta borders toy kai orismos apostasewn */
+    width: 30%;
+    border-radius: 5.7%;
+    border-width: 3.7px;
+    border-style: solid;
+    border-color: rgba(187, 66, 187, 0.5);
+    margin: 2%;
+    padding: 1.5%;
+}
+
+legend {            /* Orismos megethoys kai xrwmatos grammatoseiras kai topothesias toy legend stoixeioy enos fieldset */
+    text-align:start;
+    font-size: 1.4em;
+    color: rgba(54, 6, 54, 0.85);
+}
+
+/* End of form styling */
+
+/* About us */
+
+
+
+/* End of about us*/
+
+/* Footer styling */
+
+footer {
+    /* Genikes epiloges gia to footer, oswn afora to xrwma toy kai to styl tis grammatoseiras */
+    color: rgb(0, 0, 0);
+    background-color: rgba(187, 66, 187, 0.3);
+    font-style: italic;
+}
+
+.footerg {              /* kateyhthinsi twn element entos toy sygkekrimenoy stoixeioy se seira me flex */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.footer_article {
+    /* Epiloges mas gia to periexomeno toy footer mas, etsi wste ta dyo div poy periexei na fainontai omoiomorfa to ena dipla sto allo */
+    margin: 0 20px;
+}
+
+
+.list {
+    list-style: none;
+    /* Diagrafei tis teleies dipla apo ta stoixeia tis listas */
+    padding: 0;
+}
+
+#footer-imgs {
+    /* ta social na einai dipla dipla*/
+    display: flex;
+    align-content: space-between;
+}
+
+footer img {
+    width: 50px;
+    height: 50px;
+    margin-right: 5px;
+}
+
+/* End of footer styling */
+
+#index {
+    /* Epiloges mas gia to megethos kai to styl toy arthroy sto Home page */
+    width: 60%;
+    text-align: center;
+    margin: 10px 20%;
+    font-weight: 500;
+}
+
+#main_peugot{
+    /* Orismos ypsoys toy main part tis selidas mas */
+    display: grid;
+    /*grid-template-columns: 1fr;*/
+    place-items: center;
+    height: 100%;
+}
+
+/* Media gia to kinito typoy */
+
+
+@media only screen and (min-width: 230px)
+     and (max-width: 520px) {
+
+    .lower_header {                 /* Epiloges morfopoiisis toy lower header mas */
+        font-size: 2.5vw;
+        margin-top: 5%;
+        margin-bottom: 3%;
+    }
+
+    .logoh {                       /* Morfopoiisi toy logoh sto kentro */
+        justify-content: center;
+        padding: 3%;
+    }
+
+    .header_h1,                 /* apostaseis sta stoixia toy upper_header mas*/
+    .logo {     
+        margin: 5%;
+    }
+
+    nav {                   /* Stoixisi toy navigation kai twn text poy periexei */
+        justify-content: center;
+        text-align: center;
+    }
+
+    .topnav a {             /* Epiloges gia stoixisi, megethos grammatoseiras kai elements */
+        width: 15%;
+        max-width: 35%;
+        font-size: 2.6vw;
+        padding: 3%;
+        padding-right: 4%;
+        text-align: center;
+    }
+    
+    .logo {             /* Megethos logotypoy */
+        /* Megethos tis eikonas */
+        height: 50%;
+        width: 30%;
+    }
+
+    .header_h1 {            /* Font styling toy header_h1 */ 
+        font-size: 3.5vw;
+        font-family:monospace;
+    }
+
+    p, td {                 /* Font styling  */ 
+        font-size: 2.7vw;
+    }
+
+    h2 {                /* Font styling */ 
+        font-size: 3.5vw;
+    }
+
+    /* Editing the categories and the aggelies  */
+
+    .aggelia-group {                /* Diata3i twn periewomenwn toy aggelia-group etsi wste na 
+            fainetai se stili opws theloyme sto kinito */
+        flex-direction: column;
+        
+        justify-content: flex-start;
+        max-height: none;
+
+        overflow-y: visible;
+        
+        /*max-height: 60%;*/
+    }
+
+    .aggelia-group img {                /* Megethos kai stoixisi eikonas */
+        
+        width: 80%;
+        max-width: 100%;
+        margin-left: 8%;
+        
+        padding: 2%;
+        max-width: 100%; 
+        align-self: center;
+        
+    }
+
+    .aggelia-group li {         /* Stoixisi twn periexomenwn listas poy vrisketai mesa sto aggelia-group */
+        margin-right: 2%;
+        gap: 2%;
+    }
+
+    .aggelia-group ul {
+        align-self: center;
+        margin: 5%;
+    }
+
+    .car-img {          /* megethos eikonas */
+        max-width: 100%;
+    }
+    
+
+    #car_leptom {       /* Megethos toy sygkekrimenoy elemment kai stoixisi grammatwn sto kentro */
+        width: 80%;
+        text-align: center;
+    }
+
+    .agg_leptom {           /* Megethos kai stoixisi toy element agg_leptom */
+        align-self: center;              
+        width: 100%; 
+        margin-right: 8%;
+        
+        font-size: 2.5vw;   
+        justify-content: center;
+    }
+
+    .form-container input {         /* Megethos element */
+        width: 75%;
+    }
+
+    #about_us {         /* Diata3i twn periexomenwn toy #about_us wste na einai se stili gia tis othones kinitoy */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #about_header {         /* Apostaseis sto header tis selidas about_us */
+        margin-bottom: 1%;
+        margin-top: 3%;
+        font-size: 4.2vw;
+    }
+
+    #about_img {        /* apostasi se eikona */
+        margin: 6%;
+    }
+
+    .person_info {          /* Epiloges gia megethos grammatoseiras kai megethoys kai stoixisis toy element */
+        font-size: 3.3vw;
+        width: 70%;
+        align-self: center;;
+    }
+
+    #main_peugot {                 /* Diata3i twn stoixeiwn toy #main_peugot se columns */
+        display: flex;
+        flex-direction: column;
+    }
+
+    #peugeot-part {             /* Diata3i twn Stoixisi twn stoixeiwn toy #peugeot_part se columns me orati tin yperxeilisi*/
+        flex-direction: column;
+        overflow-y: visible;
+    }
+
+    #arxiki-eikona-agg img{     /* megethos eikonas */
+        max-width: 100%;
+        width: 80%;
+    }
+
+    .aggelia_details {          /* megethos stoixeioy */
+        width: 80%;
+    }
+
+    #leptomereies-part {           /* megethos stoixeioy */
+        width: 80%;
+
+    }
+
+    #aggelia-arxi {         /* apostaseis stoixeioy */
+        margin-left: 10%;
+    }
+
+    .table-div h4{          /*megethos grammatoseiras */
+        font-size: 2vw;
+    }
+
+    #aggelia-arxi > h3 {        /* megethos grammatoseiras */
+        font-size: 2.2vw;
+    }
+
+    #aggelia-plirof-telos {         /* Stoixisi kai diata3i toy sygkekrimenoy element */
+        padding: 7%;
+        margin-left: 10%;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .car-detail-images {            /* Diata3i se column twn stoiexeioy toy element */
+        flex-direction: column;
+    }
+
+    .car-detail-images img {        /* Megethos kai stoixisi eikonas */
+        width: 70%;
+        margin: 7%;
+        padding: 7%;
+    }
+
+    footer {            /* megethos grammatoseiras */
+        font-size: 2.5vw;
+    } 
+
+    .footer-imgs {
+        display: flex;
+        flex-direction:  column;
+    }
+    
+    footer img {
+        width: 75%; 
+        height: 65%;
+    }
+
+    form {              /* megethos grammatoseiras */
+        font-size: 2.8vw;
+    }
+
+    form input {                /* megethos grammatoseiras */
+        font-size: 2.5vw;
+    }
+
+    #in_row_form_group {        /* allagi kateythinsis twn epilogwn mas se katheta */ 
+        flex-direction: column;
+    }
+}
+
+
+/* Media gia othoni typoy tablet */
+
+@media only screen and (min-width: 521px)
+    and (max-width: 1320px){
+
+        .lower_header {                 /* megethos grammatoseiras */
+            font-size: 1.1rem;
+            margin-bottom: 3%;
+        }
+    
+        .lower_header h2 {                      /* stoixisi kai apostaseis toy element*/
+            margin-top: 5%;
+            margin-bottom: 3%;
+            font-size: 1.4rem;
+        }
+    
+        .logoh {                                 /* stoixisi toy element */
+            justify-content: center;
+            padding: 3%;
+        }
+    
+        nav {                                /* stoixisi kai apostaseis toy header */
+            font-size: 1.1rem;
+        }
+    
+        .topnav a {             /* Megethos kai stoixisi twn elements toy navigation bar kai orismos megethoys grammatoseiras */
+            width: 45%;
+            font-size: 1.1rem;
+            text-align: center;
+        }
+    
+        #a_left {                   /* Afairesi twn akrianwn borders gia poly mikri othoni */
+            border-left: none;
+        }
+    
+        #a_right {
+            border-right: none;
+        }
+        
+        .logo {
+            /* Megethos tis eikonas */
+            width: 40%;
+            max-width: 50%;
+            margin-left: 3%;
+            margin-right: 3%;
+        }
+    
+        .header_h1 {                /* Megethos grammatoseiras */
+            font-size: 4vw;
+        }
+    
+        p, td {             /* Megethos grammatoseiras */
+            font-size: 1.1rem;
+        }
+    
+        /* Editing the categories and the aggelies  */
+    
+        .aggelia-group {                        /* Orismos ypsoys */
+            height: auto;
+
+        }
+    
+        .aggelia-group img {            /* Stis ergasies vgainei ligo pio sta aristera to agg_leptom */
+    
+            width: 90%;
+            margin-left: 10%;
+            max-width: 100%;
+            align-self: center;
+            margin-top: 8%;
+            padding: 4%;
+        }
+    
+        .aggelia-group li {             /* Megethos grammatoseiras */
+            font-size: 1.3vw;
+        }
+    
+        .car-img {              /* Gia kapoio logo trollarei kai den fainetai teleiws */
+            width: 100%;
+            height: auto;
+            box-sizing: border-box;
+        }
+        
+    
+        #car_leptom {                   /* Stoixisi kai apostasi toy element */
+            text-align: center;
+            margin-left: 10%;        
+        }
+    
+        #car_leptom p {                     /* Megethos grammatoseiras */ 
+            font-size: 1rem;            
+        }
+    
+        .agg_leptom {           /* Megethos toy group twn elements kai apostaseis kai stoixisi twn stoixeiwn entos */
+            align-self: center;                  
+            width: 60%;       
+            height: 65%;
+            margin-right: 5%;
+            margin-bottom: 8%;  
+            font-size: 0.9rem;          /* Megethos grammatoseiras */
+            
+        }
+    
+        /* Gia tin aggelia tou aytokinitoy */ 
+    
+        #arxiki-eikona-agg img{             /* megethos element */
+            max-width: 100%;
+            width: 75%;
+        }
+    
+        .aggelia_details {                      /* Megethos kai apostaseis element */
+            width: 60%;
+            margin-right: 8%;
+        }
+    
+        #leptomereies-part {                            /*megethos element */
+            width: 80%;
+        }
+    
+        #aggelia-arxi {                             /* apostaseis element */
+            margin-left: 10%;
+        }
+    
+        .table-div h4{                          /* megethos grammatoseiras */
+            font-size: 1.2rem;
+        }
+    
+        #aggelia-arxi > h3 {                    /* megethos grammatoseiras */
+            font-size: 1.3rem;
+        }
+    
+        #aggelia-plirof-telos {
+            padding: 7%;
+            margin-left: 10%;
+            justify-content: center;
+            text-align: center;
+        }
+    
+        #arrow {            /* Megethos kai apostaseis tis eikonas */
+            width: 18%;
+        }
+    
+        .car-detail-images {            /* apostaseis twn eikonwn */
+            margin: 7%;
+        }
+    
+        .car-detail-images img {        /* Megethos kai apostaseis twn eikonwn */
+            width: 50%;
+            max-width: 50%;
+            height: 50%;
+        }
+    
+        .form-container input {         /* megethos toy input tag */
+            width: 91%;
+        }
+
+        #in_row_form_group {        /* allagi kateythinsis twn epilogwn mas se katheta */ 
+            flex-direction: column;
+        }
+    
+        #about_img {                /* apostaseis eikonas */
+            margin: 6%;
+        }
+    
+        .person_info {          /* megethos kai stoixisis element */
+            width: 80%;
+            align-self: center;
+        }
+    
+        footer {                /* megethos grammatoseiras */
+            font-size: 1.15rem;
+        } 
+
+    
+}

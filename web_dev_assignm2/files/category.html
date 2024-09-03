@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTD-8">
+    <meta name="description" content="Βρείτε πολλών ειδών αγγελίες στον ιστότοπό μας!">
+    <meta name="keywords" content="HTML, CSS, Javascript">
+    <meta name="author" content="Giorgos kai Giannis">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/CSS" href="style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <script src="categs.js"></script>
+
+    <script src="login.js"></script>
+
+    <script id="category-template" type="text/x-handlebars-template">
+            {{#each adv}}
+            <div class="cat">
+                <h4 id="cat-title{{id}}" class="cat-title">{{title}}</h4>
+                <img id="cat-img{{id}}" class="cat-img" src="https://wiki-ads.onrender.com/{{first images}}" width="500px" height="350px">
+                <p id="cat-description{{id}}" class="cat-description">{{description}}</p>
+                <p id="p2{{id}}" class="p2">Κόστος: {{cost}}</p>
+                <p id="cat-id{{id}}" class="cat-id" style="display: none;">{{id}}</p>
+                <button id="fave_button{{id}}" class="addToFavoritesBtn" type="button" onclick="favourites(this)">Add</button>
+            </div>
+            {{/each}}
+        </script>
+
+    <title>Aggeloi Aggeliwn</title>
+
+    <script>
+        function openNewPage() {
+            
+
+            const username = document.getElementById('username').value;
+            const sessionId = document.getElementById('sessionId').textContent;
+
+            // Construct the URL with parameters
+            const url = `favorite-ads.html?sessionId=${sessionId}&username=${username}`;
+
+            // Open the new tab with the constructed URL
+            window.open(url, '_blank');
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <header class="upper_header">
+
+        <div class="logoh">
+            <h1 class="header_h1">Άγγελοι</h1>
+            <img src="images/agelos.jpg" class="logo">
+            <h1 class="header_h1">Αγγελιών</h1>
+        </div>
+
+    </header>
+
+    <main id="index_main">
+        <div></div>
+        <section id="sec">
+            <div id="login_form">
+                <form id="login-form">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+
+                    <label for="user-password">Password:</label>
+                    <input type="password" id="user-password" name="user-password" required>
+
+                    <button type="button" onclick="login()">Login</button>
+                </form>
+            </div>
+
+            <div id="sessionIdContainer" style="display: none;">
+                <p id="sessionIdLabel">Session ID:</p>
+                <p id="sessionId"></p>
+            </div>
+            <div><button id="gotofavbutton" type="button" onclick="openNewPage()"  style="display: none;" >Go to favorites</button>
+        </section>
+        <div id="categ-list" class="custom-div">
+        </div>
+    </main>
+
+
+    <footer class="footerg">
+        <article class="footer_article">
+            <h3>Contact us:</h3>
+            <ul class="list">
+                <li>p3200116@aueb.gr</li>
+                <li>p3200021@aueb.gr</li>
+            </ul>
+        </article>
+
+        <article class="footer_article">
+            <h3>Find us:</h3>
+            <ul class="list" id="footer-imgs">
+                <li><a href="https://www.facebook.com/profile.php?id=100010096868607" target="_blank"><img
+                            src="images/fb.png" width="50" height="50"></a></li>
+                <li><a href="https://www.instagram.com/giannis._.boubalis/" target="_blank"><img src="images/insta.webp"
+                            width="50" height="50"></a></li>
+            </ul>
+
+        </article>
+
+        <article class="footer_article">
+            <h3>Sign up:</h3>
+            <ul class="list">
+                <li>Για δημιουργία λογαριασμού , </li>
+                <li>πατήστε <a href="sign_up.html" target="_blank">εδώ</a>.</li>
+            </ul>
+        </article>
+    </footer>
+
+</body>
+
+
+</html>

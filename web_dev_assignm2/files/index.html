@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTD-8">
+        <meta name="description" content="Βρείτε πολλών ειδών αγγελίες στον ιστότοπό μας!">
+        <meta name="keywords" content="HTML, CSS, Javascript">
+        <meta name="author" content="Giorgos kai Giannis">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" type="text/CSS" href="style2.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet">
+
+        <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+        <script src="categs.js"></script>
+        <script src="login.js"></script>
+
+        <script id="index-div-template" type="text/x-handlebars-template">
+
+            {{#each category}}
+
+            <div id="haha">
+                
+                <h3>{{title}}</h3>
+                <a href="category.html?id={{id}}" target="_blank">
+                    <img src="https://wiki-ads.onrender.com/{{img_url}}">
+                 </a>
+                <ul id="additionalData-{{id}}">
+                    {{#each additionalData}}
+                      <li><a href="subcategory.html?id={{id}}" target="_blank">{{title}}</a></li>
+                    {{/each}}
+                  </ul>
+            </div>
+            {{/each}}
+        </script>
+
+        <title>Aggeloi Aggeliwn</title>
+
+    </head>
+
+    <body>
+
+        <header class="upper_header">
+    
+            <div class="logoh">
+                <h1 class="header_h1">Άγγελοι</h1>
+                <img src="images/agelos.jpg" class="logo">
+                <h1 class="header_h1">Αγγελιών</h1>
+            </div>
+        
+        </header>
+       
+        <main id="index_main">
+            
+           <div id="index-list" class="custom-div">  
+           </div> 
+        </main>
+
+        
+        <footer class="footerg">
+            <article class="footer_article">
+                <h3>Contact us:</h3>
+                <ul class="list">
+                    <li>p3200116@aueb.gr</li>
+                    <li>p3200021@aueb.gr</li>
+                </ul>
+            </article>
+    
+            <article class="footer_article">
+                <h3>Find us:</h3>
+                <ul class="list" id="footer-imgs">
+                    <li><a href="https://www.facebook.com/profile.php?id=100010096868607" target="_blank"><img src="images/fb.png" width="50" height="50"></a></li>
+                    <li><a href="https://www.instagram.com/giannis._.boubalis/" target="_blank"><img src="images/insta.webp" width="50" height="50"></a></li>
+                </ul>
+    
+            </article>
+
+            <article class="footer_article">
+                <h3>Sign up:</h3>
+                <ul class="list">
+                    <li>Για δημιουργία λογαριασμού ,  </li>
+                    <li>πατήστε <a href="sign_up.html" target="_blank">εδώ</a>.</li>
+                </ul>
+            </article>
+        </footer>
+
+    </body>
+
+
+</html>

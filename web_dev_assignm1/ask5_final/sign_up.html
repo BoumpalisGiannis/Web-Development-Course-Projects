@@ -1,0 +1,351 @@
+<html>
+
+    <head>
+        <meta charset="UTD-8">
+        <meta name="description" content="Technical support ">
+        <meta name="keywords" content="HTML, CSS, Javascript">
+        <meta name="author" content="Giorgos kai Giannis">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script src="validation.js" ></script>
+
+        <link rel="stylesheet" type="text/CSS" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet">
+
+        <title>Aggeloi Aggeliwn</title>
+
+    </head>
+
+
+    <body>
+
+
+        <header class="upper_header">
+    
+            <div class="logoh">
+                <h1 class="header_h1">Άγγελοι</h1>
+                <img src="images/agelos.jpg" class="logo" >
+                <h1 class="header_h1">Αγγελιών</h1>
+            </div>
+
+            <div class="nav">
+                <nav class="topnav">
+                    <a id="a_left" href="index.html">Home</a>
+                    <a href="categories.html">Categories</a>
+                    <a href="about_us.html">About</a>
+                    <a id="a_right" href="contact_us.html">Contact</a>
+            
+                </nav>
+            </div>
+        
+        </header>
+
+
+
+        <header class="lower_header">
+            <h2>Κάντε εγγραφή και γίνετε και εσείς ένας Άγγελος</h2>
+
+        </header>
+
+        <main>
+            <form class="form-container" id="sign_up_form">
+                <fieldset class="form-group">
+                    <legend>Στοιχεία Πελάτη</legend>
+
+                    <div class="form-group">
+                        <label for="cname">Ονοματεπώνυμο</label>
+                    
+                        <input type="text" id="cname" name="cname" placeholder="πχ Γιακουμής Παπαδόπουλος" required>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="csurv_opt">Ηλεκτρονικό Ταχυδρομείο</label>
+                    
+                        <input type="surv_opt" id="csurv_opt" name="csurv_opt" required autocomplete="csurv_opt" list="user-surv_opts"
+                            placeholder="πχ abc@gmail.com">
+                    
+                        <datalist id="user-surv_opts">
+                            <option>abc@gmail.com</option>
+                        </datalist>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="phone_id">Τηλέφωνο</label>
+                    
+                        <input type="text" id="phone_id" name="phone" placeholder="πχ 6912345678" pattern="69[0-9]{8}" required>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="dieyth_id">Διεύθυνση Κατοικίας</label>
+                    
+                        <input type="text" id="dieyth_id" name="dieyth_katoik" placeholder="πχ 28ης Οκτωβρίου 76"  required>
+                    </div>
+    
+                    <div class="form-group">
+    
+                        <label for="dob_id">Date of Birth:</label>
+                        <input type="date" id="dob_id" name="dob" required
+                        value="2002-02-17">
+                    </div>
+
+                </fieldset>               
+
+                <fieldset class="form-group">
+                    <legend>Στοιχεία Λογαριασμού</legend>
+
+                    <div class="form-group">
+                        <label for="username_id">Ψευδώνυμο</label>
+                    
+                        <input type="text" id="username_id" name="username" placeholder="πχ yiakPapad23" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pword_id">Κωδικός</label>
+                    
+                        <input type="password" id="pword_id" name="password" placeholder="πχ Abbc3$gh905!ogi" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pword_id2">Κωδικός</label>
+                    
+                        <input type="password" id="pword_id2" name="password2" placeholder="πχ Abbc3$gh905!ogi" required>
+                        <h4 id="pword_message"></h4>
+                    </div>
+
+                </fieldset>
+
+                <!-- Tropos Epikoinwnias -->
+                <fieldset class="form-group">
+                    <legend>Τρόπος Επικοινωνίας</legend>
+
+                        <div id="in_row_form_group">
+                            <label for="sms_id">SMS</label>
+                            <input type="checkbox" id="sms_id" name="sms" value="SMS">
+    
+                            <label for="viber_id">Viber</label>
+                            <input type="checkbox" id="viber_id" name="viber" value="Viber">
+    
+                            <label for="surv_opt">e-mail</label>
+                            <input type="checkbox" id="surv_opt" name="surv_opt" value="e-mail" checked>
+    
+                            <label for="surv_opt">WhatsApp</label>
+                            <input type="checkbox" id="surv_opt" name="whatsapp" value="WhatsApp">
+    
+                            <label for="mess_id">Messenger</label>
+                            <input type="checkbox" id="mess_id" name="mess" value="Messenger">
+                        </div>
+                         
+                        <details>
+                            <summary>Περισσότερα</summary>
+                            <p>Διαθέσιμες επιλογές επικοινωνίας για αποστολή ενημερώσεων και διαφημίσεων.</p>
+                        </details>
+
+                </fieldset>
+
+                <!-- Erwtimatologio -->
+                <fieldset class="form-group" >
+                    <legend >Ερωτηματολόγιο</legend>
+
+                            <div class="survey_group">
+                                <p>
+                                    <span class="question">Τύπος αγγελιών που σας ενδιαφέρει:</span><br>
+                                    <br>
+                                    <div class="survey_option">
+                                        <label for="surv_opt">Ακινήτων</label>
+                                        <input type="checkbox" id="surv_opt" name="surv_opt" value="Ακινήτων">
+                                    </div>
+
+                                    <div class="survey_option">
+                                        <label for="surv_opt">Οχημάτων</label>
+                                        <input type="checkbox" id="surv_opt" name="surv_opt" value="Οχημάτων">                                        
+                                    </div>
+
+                                    <div class="survey_option">
+                                        <label for="surv_opt">Εργασίας</label>
+                                        <input type="checkbox" id="surv_opt" name="surv_opt" value="Εργασίας">                                        
+                                    </div>
+
+                                    <div class="survey_option">
+                                        <label for="surv_opt">Οικιακών Συσκευών</label>
+                                        <input type="checkbox" id="surv_opt" name="whatsapp" value="Οικιακών Συσκευών">                                       
+                                    </div>
+
+                                </p>
+                                
+                            </div>
+
+                            <div class="survey_group">
+                                <p>
+                                    <span class="question">Περιοχές που θα επιθυμούσατε να κατοικήσετε:</span><br>
+                                    <br>
+                                    <div class="survey_option">
+                                        <label for="surv_opt">Γλυφάδα</label>
+                                        <input type="checkbox" id="surv_opt" name="surv_opt" value="Γλυφάδα">
+                                    </div>
+
+                                    <div class="survey_option">
+                                        <label for="surv_opt">Γκύζι</label>
+                                        <input type="checkbox" id="surv_opt" name="surv_opt" value="Γκύζι">                                        
+                                    </div>
+
+                                    <div class="survey_option">
+                                        <label for="surv_opt">Μυτιλήνη</label>
+                                        <input type="checkbox" id="surv_opt" name="surv_opt" value="Μυτιλήνη">                                        
+                                    </div>
+
+                                    <div class="survey_option">
+                                        <label for="surv_opt">Εδινβούργο και ευρύτερες περιοχές</label>
+                                        <input type="checkbox" id="surv_opt" name="surv_opt" value="Εδινβούργο και ευρύτερες περιοχές">                                       
+                                    </div>
+
+                                    <div class="survey_option">
+                                        <label for="surv_opt">Άλλο</label>
+                                        <input type="checkbox" id="surv_opt" name="surv_opt" value="Άλλο">                                       
+                                    </div>
+
+                                </p>
+                                
+                            </div>
+
+                            <div class="survey_group">
+                                <p>
+                                    <span class="question">Τομείς εργασίας που σας ενδιαφέρουν:</span><br>
+                                    <br>
+                                    <div class="survey_option">
+                                        <label for="surv_opt">Πληροφορικής</label>
+                                        <input type="checkbox" id="surv_opt" name="surv_opt" value="Πληροφορικής">
+                                    </div>
+
+                                    <div class="survey_option">
+                                        <label for="surv_opt">Λογιστικής</label>
+                                        <input type="checkbox" id="surv_opt" name="surv_opt" value="Λογιστικής">                                        
+                                    </div>
+
+                                    <div class="survey_option">
+                                        <label for="surv_opt">Αστυνομία</label>
+                                        <input type="checkbox" id="surv_opt" name="surv_opt" value="e-Αστυνομία" >                                        
+                                    </div>
+
+                                    <div class="survey_option">
+                                        <label for="surv_opt">Τουριστικά</label>
+                                        <input type="checkbox" id="surv_opt" name="whatsapp" value="Τουριστικά">                                       
+                                    </div>
+
+                                    <div class="survey_option">
+                                        <label for="surv_opt">Άλλο</label>
+                                        <input type="checkbox" id="surv_opt" name="whatsapp" value="Άλλο">                                       
+                                    </div>
+
+                                </p>
+                                
+                            </div>
+
+                            <div class="survey_group">
+                                <p>
+                                    <span class="question">Τύποι οχημάτων που σας έλκουν το ενδιαφέρον:</span><br>
+                                    <br>
+                                    <div class="survey_option">
+                                        <label for="surv_opt">Τζιπ</label>
+                                        <input type="checkbox" id="surv_opt" name="surv_opt" value="Τζιπ">
+                                    </div>
+
+                                    <div class="survey_option">
+                                        <label for="surv_opt">Οχήματα πόλης</label>
+                                        <input type="checkbox" id="surv_opt" name="surv_opt" value="Οχήματα πόλης">                                        
+                                    </div>
+
+                                    <div class="survey_option">
+                                        <label for="surv_opt">Οικονομικά Οχήματα</label>
+                                        <input type="checkbox" id="surv_opt" name="surv_opt" value="Οικονομικά Οχήματα">                                        
+                                    </div>
+
+                                    <div class="survey_option">
+                                        <label for="surv_opt">Άλλο</label>
+                                        <input type="checkbox" id="surv_opt" name="surv_opt" value="Άλλο">                                       
+                                    </div>
+
+                                </p>
+                                
+                            </div>
+
+                            <div class="survey_group">
+                                <p>
+                                    <span class="question">Οικιακες συσκευες που έχετε ανάγκη:</span><br>
+                                    <br>
+                                    <div class="survey_option">
+                                        <label for="surv_opt">Πλυντήριο</label>
+                                        <input type="checkbox" id="surv_opt" name="surv_opt" value="Πλυντήριο">
+                                    </div>
+
+                                    <div class="survey_option">
+                                        <label for="surv_opt">Ψυγείο</label>
+                                        <input type="checkbox" id="surv_opt" name="surv_opt" value="Ψυγείο">                                        
+                                    </div>
+
+                                    <div class="survey_option">
+                                        <label for="surv_opt">Σκεύη Μαγειρικής</label>
+                                        <input type="checkbox" id="surv_opt" name="surv_opt" value="Σκεύη Μαγειρικής" >                                        
+                                    </div>
+
+                                    <div class="survey_option">
+                                        <label for="surv_opt">Κρεβάτι</label>
+                                        <input type="checkbox" id="surv_opt" name="surv_opt" value="Κρεβάτι">                                       
+                                    </div>
+
+                                    <div class="survey_option">
+                                        <label for="surv_opt">Άλλο</label>
+                                        <input type="checkbox" id="surv_opt" name="surv_opt" value="Άλλο">                                       
+                                    </div>
+
+                                    <div class="survey_option">
+                                        <label for="surv_opt">Δεν χρειάζομαι κάτι την δεδομένη στιγμή</label>
+                                        <input type="checkbox" id="surv_opt" name="surv_opt" value="Δεν χρειάζομαι κάτι την δεδομένη στιγμή">                                       
+                                    </div>
+
+                                </p>
+                                
+                            </div>
+                            
+                        
+                </fieldset>
+                
+
+                <div class="form-group">
+                    <input id="button" type="submit" value="Submit">
+                </div>  
+
+            </form>
+        </main>
+
+        <footer class="footerg">
+            <article class="footer_article">
+                <h3>Contact us:</h3>
+                <ul class="list">
+                    <li>p3200116@aueb.gr</li>
+                    <li>p3200021@aueb.gr</li>
+                </ul>
+            </article>
+    
+            <article class="footer_article">
+                <h3>Find us:</h3>
+                <ul class="list" id="footer-imgs">
+                    <li><a href="https://www.facebook.com/profile.php?id=100010096868607" target="_blank"><img src="images/fb.png" width="50" height="50"></a></li>
+                    <li><a href="https://www.instagram.com/giannis._.boubalis/" target="_blank"><img src="images/insta.webp" width="50" height="50"></a></li>
+                </ul>
+    
+            </article>
+
+            <article class="footer_article">
+                <h3>Sign up:</h3>
+                <ul class="list">
+                    <li>Για δημιουργία λογαριασμού ,  </li>
+                    <li>πατήστε <a href="sign_up.html" target="_blank">εδώ</a>.</li>
+                </ul>
+            </article>
+        </footer>
+    </body>
+
+
+</html>

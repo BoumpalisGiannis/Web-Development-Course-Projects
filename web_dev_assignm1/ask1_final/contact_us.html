@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="UTD-8">
+        <meta name="description" content="Technical support ">
+        <meta name="keywords" content="HTML, CSS, Javascript">
+        <meta name="author" content="Giorgos kai Giannis">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Aggeloi Aggeliwn</title>
+
+    </head>
+
+
+    <body>
+
+
+        <header>
+    
+            <div>
+                <h1>Άγγελοι</h1>
+                <img src="images/agelos.jpg" class="logo" >
+                <h1>Αγγελιών</h1>
+            </div>
+
+            <div>
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="categories.html">Categories</a>
+                    <a href="about_us.html">About</a>
+                    <a id="a_right"href="contact_us.html">Contact</a>
+            
+                </nav>
+            </div>
+        
+        </header>
+
+
+
+        <header>
+            <h2>Επικοινωνήστε μαζί μας για οποιοδήποτε τεχνικό πρόβλημα!</h2>
+
+        </header>
+
+        <main>
+            <form>
+
+                <label for="cname">Ονοματεπώνυμο</label>
+                <br>
+                <input type="text" id="cname" name="cname" placeholder="πχ Γιακουμής Παπαδόπουλος" required>
+                <br>
+
+                <label for="cemail">Ηλεκτρονικό ταχυδρομείο</label>
+                <br>
+                <input type="email" id="cemail" name="cemail" required autocomplete="cemail" list="user-emails"
+                    placeholder="πχ abc@gmail.com">
+                <br>
+                <datalist id="user-emails">
+                    <option>abc@gmail.com</option>
+                </datalist>
+
+                <label for="cnum">Τηλέφωνο</label>
+                <br>
+                <input type="text" id="cnum" name="cnum" placeholder="πχ 6912345678" pattern="69[0-9]{8}" required>
+                <br>
+
+                <label for="kodagg">Κωδικός αγγελίας</label>
+                <br>
+                <input type="text" id="kodagg" name="kodagg" placeholder="πχ #CR123" pattern="#[A-Z]{2}[0-9]{3}" required>
+                <br>
+
+                <label for="pdesc">Περιγραφή προβλήματος</label>
+                <br>
+                <input type="text" id="pdesc" name="pdesc" placeholder="πχ Τα στοιχεία της αγγελίας δεν υπάρχουν" size="45">
+                <br>
+
+
+                <input type="submit" value="Submit">
+
+            </form>
+        </main>
+
+        <footer>
+            <article>
+                <h3>Contact us:</h3>
+                <ul>
+                    <li>p3200116@aueb.gr</li>
+                    <li>p3200021@aueb.gr</li>
+                </ul>
+            </article>
+    
+            <article>
+                <h3>Find us:</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com/profile.php?id=100010096868607" target="_blank"><img src="images/fb.png" width="50" height="50"></a></li>
+                    <li><a href="https://www.instagram.com/giannis._.boubalis/" target="_blank"><img src="images/insta.webp" width="50" height="50"></a></li>
+                </ul>
+    
+            </article>
+        </footer>
+    </body>
+
+
+</html>

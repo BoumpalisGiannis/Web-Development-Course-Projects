@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="UTD-8">
+        <meta name="description" content="Technical support ">
+        <meta name="keywords" content="HTML, CSS, Javascript">
+        <meta name="author" content="Giorgos kai Giannis">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" type="text/CSS" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet">
+
+        <title>Aggeloi Aggeliwn</title>
+
+    </head>
+
+
+    <body>
+
+
+        <header class="upper_header">
+    
+            <div class="logoh">
+                <h1 class="header_h1">Άγγελοι</h1>
+                <img src="images/agelos.jpg" class="logo" >
+                <h1 class="header_h1">Αγγελιών</h1>
+            </div>
+
+            <div class="nav">
+                <nav class="topnav">
+                    <a href="index.html">Home</a>
+                    <a href="categories.html">Categories</a>
+                    <a href="about_us.html">About</a>
+                    <a id="a_right"href="contact_us.html">Contact</a>
+            
+                </nav>
+            </div>
+        
+        </header>
+
+
+
+        <header class="lower_header">
+            <h2>Επικοινωνήστε μαζί μας για οποιοδήποτε τεχνικό πρόβλημα!</h2>
+
+        </header>
+
+        <main>
+            <form class="form-container">
+                <div class="form-group">
+                    <label for="cname">Ονοματεπώνυμο</label>
+                
+                    <input type="text" id="cname" name="cname" placeholder="πχ Γιακουμής Παπαδόπουλος" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="cemail">Ηλεκτρονικό ταχυδρομείο</label>
+                
+                    <input type="email" id="cemail" name="cemail" required autocomplete="cemail" list="user-emails"
+                        placeholder="πχ abc@gmail.com">
+                
+                    <datalist id="user-emails">
+                        <option>abc@gmail.com</option>
+                    </datalist>
+                </div>
+
+                <div class="form-group">
+                    <label for="cnum">Τηλέφωνο</label>
+                
+                    <input type="text" id="cnum" name="cnum" placeholder="πχ 6912345678" pattern="69[0-9]{8}" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="kodagg">Κωδικός αγγελίας</label>
+                
+                    <input type="text" id="kodagg" name="kodagg" placeholder="πχ #CR123" pattern="#[A-Z]{2}[0-9]{3}" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="pdesc">Περιγραφή προβλήματος</label>
+                
+                    <input type="text" id="pdesc" name="pdesc" placeholder="πχ Τα στοιχεία της αγγελίας δεν υπάρχουν" size="45">
+                </div>
+
+                <div class="form-group">
+                    <input id="button" type="submit" value="Submit">
+                </div>           
+
+            </form>
+        </main>
+
+        <footer class="footerg">
+            <article class="footer_article">
+                <h3>Contact us:</h3>
+                <ul class="list">
+                    <li>p3200116@aueb.gr</li>
+                    <li>p3200021@aueb.gr</li>
+                </ul>
+            </article>
+    
+            <article class="footer_article">
+                <h3>Find us:</h3>
+                <ul class="list" id="footer-imgs">
+                    <li><a href="https://www.facebook.com/profile.php?id=100010096868607" target="_blank"><img src="images/fb.png" width="50" height="50"></a></li>
+                    <li><a href="https://www.instagram.com/giannis._.boubalis/" target="_blank"><img src="images/insta.webp" width="50" height="50"></a></li>
+                </ul>
+    
+            </article>
+        </footer>
+    </body>
+
+
+</html>
